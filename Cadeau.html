@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Boutons</title>
+    <style>
+        body {
+            background-image: url('https://img.phonandroid.com/2021/03/windows-95-easter-egg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white; /* To ensure text is visible on dark or complex backgrounds */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            background-color: #CCCCCC;
+            color: black;
+            padding: 20px 48px;
+            margin: 20px;
+            border: 2px solid white;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 2px;
+			font-family: "MS Sans Serif", sans-serif; /* Utilisation de la police MS Sans Serif */
+        }
+      
+
+        button:hover {
+            background-color: #999999;
+        }
+    </style>
+    <script>
+        function showMessageAndRedirect(message, url) {
+            alert(message);
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='https://www.abandonware-france.org/online/play/rottdemo/'">Cadeau 1</button>
+        <button onclick="window.location.href='https://www.abandonware-france.org/online/play/blakestoneshareware/'">Cadeau 2</button>
+        <button onclick="showMessageAndRedirect('Attention ! Un fichier exe va se télécharger pour pouvoir y jouer. Mon score au premier niveau a été de 47320 =D', 'https://www.abandonware-france.org/telechargement/clic/http/m1rq6e6znknv56pc/files/')">Cadeau 3</button>
+        <button onclick="showMessageAndRedirect('Le meilleur pour la fin ! Encore un exe ...', 'https://www.abandonware-france.org/telechargement/clic/http/24cqdpihssf5xqt7/files/')">Cadeau 4</button>
+    </div>
+</body>
+</html>
